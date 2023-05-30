@@ -1,13 +1,16 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
+import Header from '../components/Header'
+import Body from '../components/Body'
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-      <p className='bg-red-500 font-bold '>Hello</p>
-      <div className='bg-red-600'>
-        Hello
-      </div>
-  </Layout>
+  <div className="bg-[url('/images/background.jpg')] bg-cover w-full h-full">
+  <Layout title="Portfolio Site | Ananthakrishnan" />
+  <Header />
+  <Body />
+  {/* <Footer /> */}
+  </div>
+  
 )
 
 export default IndexPage
