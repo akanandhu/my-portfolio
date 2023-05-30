@@ -239,6 +239,25 @@
   resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.5.1.tgz#cdd35dce4fa1a89a4fd42b1599eb35b3af408884"
   integrity sha512-Z5ba73P98O1KUYCCJTUeVpja9RcGoMdncZ6T49FCUl2lN38JtCJ+3WgIDBv0AuY4WChU5PmtJmOCTlN6FZTFKQ==
 
+"@iconify-icons/tabler@^1.2.77":
+  version "1.2.77"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/tabler/-/tabler-1.2.77.tgz#4f96168ed716561597a2a1438cc5173e51599b72"
+  integrity sha512-1Gghql9m8oMD7xecobhwYAEs+DYt7gHJ++BBranjF0va4KISXZrjCECCAmXRYZ0a0JHcjYGx95CKjv/oR55AZw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/react@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-4.1.0.tgz#5ea86acae6e209a2f5b1b52922ab85d0d22f9b45"
+  integrity sha512-Mf72i3TNNKpKCKxmo7kzqyrUdCgaoljpqtWmtqpqwyxoV4ukhnDsSRNLhf2yBnqGr3cVZsdj/i0FMpXIY0Qk0g==
+  dependencies:
+    "@iconify/types" "^2.0.0"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"

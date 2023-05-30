@@ -1,10 +1,56 @@
 import React from 'react'
 import Image from 'next/image'
+import { Icon } from '@iconify/react';
 
 interface Props {
     first_name: string
     last_name: string
 }
+
+
+
+const skills = [
+  {
+    skill: 'HTML'
+  },
+  {
+    skill: 'CSS'
+  },
+  {
+    skill: 'Next.js'
+  },
+  {
+    skill: 'Tailwind CSS'
+  },
+  {
+    skill: 'React Query'
+  },
+  {
+    skill: 'React Hook Form'
+  },
+
+]
+
+const skill = [
+  {
+    skill: 'Material UI'
+  },
+  {
+    skill: 'Bootstrap'
+  },
+  {
+    skill: 'Ant Design'
+  },
+  {
+    skill: 'Figma'
+  },
+  {
+    skill: 'Adobe Photoshop'
+  },
+{
+  skill: ''
+}
+]
 
 
 function Details(props:Props) {
@@ -38,17 +84,28 @@ With a keen eye for detail and a commitment to delivering high-quality work, I a
       <div className='flex justify-center mt-16'>
       <div className='grid grid-cols-3 pl-60'>
         <p className='w-80'>
-        I started out by teaching myself how to code using Codecademy and Treehouse. When I discovered and aptitude and passion for writing code, I decided to attend Front Range Community College to pursue a certificate in front end technologies. Upon finishing the program, I decided I hadn’t had enough so I attended Galvanize, a 6-month immersive full stack development course. Four months into the program I started working professionally as a front-end engineer.
-        </p>
+        I began my coding journey by teaching myself the fundamentals of HTML, CSS, and JavaScript. As my skills progressed, I delved into the world of React, where I discovered my true passion for front-end development.
+
+I had the opportunity to put my skills to the test at Logidots Pvt Ltd, where I worked as a front-end developer. During my time there, I honed my expertise in Next.js, a powerful framework for building server-side rendered and static websites.
+
+In addition to my experience with Next.js, I have extensive knowledge of popular UI libraries such as Material UI, Ant Design, and Bootstrap.        </p>
         <div className='flex flex-col pl-36'>
-         <p>React</p> 
-         <p>CSS</p> 
-         <p>HTML</p> 
+         {skills.map((obj:{skill:string}) => {
+          return(
+            <p key={obj.skill} >{obj.skill}</p>
+          )
+         })
+         }
+         
         </div>
         <div className='flex flex-col'>
-         <p>React</p> 
-         <p>CSS</p> 
-         <p>HTML</p> 
+          {skill.map((obj) => {
+            return(
+              <p key={obj.skill} >{obj.skill}</p>
+            )
+          })
+
+          }
         </div>
       </div>
 
@@ -70,8 +127,7 @@ With a keen eye for detail and a commitment to delivering high-quality work, I a
             <p className='text-xs font-semibold'>Sep 2022 - Present</p>
           </div>
           <div className='w-3/6'>
-          I am currently employed with Vizio as a front end software engineer. I am assisting with, and leading projects in the ad tech space to help develop internal tools for the company.
-          </div>
+          In my current role at Logidots Pvt Ltd, I am entrusted with managing and executing various frontend tasks for a diverse portfolio of projects across multiple industries. These projects exemplify my commitment to delivering exceptional results and making valuable contributions to the success of the company.         </div>
         </div>
       </div>
       
@@ -83,16 +139,39 @@ With a keen eye for detail and a commitment to delivering high-quality work, I a
       <p className='text-9xl text-gray-300 opacity-20'>03.</p>
       <h1 className='text-6xl flex items-end pl-36'>CONTACT</h1>
       </div>
-      <div className='flex pl-[26.5%] py-16'>
-        <div className='flex gap-16 '>
-            <div className='font-bold text-2xl'>
-              
-            </div>
+      <div className='flex flex-col gap-5 pl-[26.5%] py-16'>
+        <div className='flex gap-3 '>
+          <div>
+          <Icon icon={'tabler:mail'} color='white' fontSize={'2rem'} />
+          </div>
           <p className='w-3/6'>
             akananthu11@gmail.com
           </p>
         </div>
-        
+        <div className='flex gap-3 '>
+          <div>
+          <Icon icon={'tabler:brand-github'} color='white' fontSize={'2rem'} />
+          </div>
+          <p className='w-3/6'>
+            github.com/akananadhu
+          </p>
+        </div>
+        <div className='flex gap-3 '>
+          <div>
+          <Icon icon={'tabler:brand-linkedin'} color='white' fontSize={'2rem'} />
+          </div>
+          <p className='w-3/6'>
+              linkedin.com/in/Ananthakrishnan.A
+          </p>
+        </div>
+        <div className='flex gap-3 '>
+          <div>
+          <Icon icon={'tabler:device-mobile'} color='white' fontSize={'2rem'} />
+          </div>
+          <p className='w-3/6'>
+              +91-7012896637
+          </p>
+        </div>
       </div>
       
     </div>
